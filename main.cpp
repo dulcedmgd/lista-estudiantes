@@ -10,7 +10,7 @@ struct Nodo{ //Estructura que representa cada posición de la lista, posee la inf
 	Nodo *sucesor;	
 };
 
-void insertar(Nodo **cabecera); //función para insertar un nuevo nodo (estudiante) a la lista
+void insertar(Nodo **cabecera); //función para insertar los nodos (estudiantes) a la lista
 void imprimirLista(Nodo **cabecera, char titulo[50]); //función para imprimir la lista y el titulo de la misma
 void ordenarListaBurbuja(Nodo **cabecera); //funcion que implementa el metodo de ordenación burbuja, para ordenar la lista por el sexo de los estudiantes
 
@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void insertar(Nodo **cabecera){ //función para insertar un nuevo nodo (estudiante) a la lista
+void insertar(Nodo **cabecera){ //función para insertar los nodos (estudiantes) a la lista
 	Nodo *nuevo, *antes; //declaramos dos punteros tipo Nodo, nuevo guardará la información del nuevo estudiante y antes lo usaremos para modificar el nodo anterior de la lista
 	
 	char resp, titulo[50], sexo; 
